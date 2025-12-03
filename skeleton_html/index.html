@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page | NYX - Swimwear & Beachwear</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../skin_layer_css/style.css" />
+    <script src="../nervous_system_js/script.js"></script>
+    <script src="../nervous_system_js/index.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="../img/imgLogo.png"
+            alt="NYX Swimwear Logo"
+            class="navbar-logo"
+          />
+        </a>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="category.html">Products</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="collection.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Collection</a
+              >
+              <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">Women's Fashion</h6></li>
+                <li>
+                  <a class="dropdown-item" href="category.html?type=bikini"
+                    >Women's Bikini</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="category.html?type=monokini"
+                    >One-Piece Swimsuit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="category.html?type=men"
+                    >Men's Fashion</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="category.html?type=kid"
+                    >Children's Swimwear</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="category.html?type=accessory"
+                    >Beach Accessories</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Nyx</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="cart.html" id="cartBtn" class="btn btn-outline-dark me-2">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <div class="user-area d-flex align-items-center">
+              <div class="dropdown" id="userDropdown">
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fa fa-user"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" id="userMenu"></ul>
+              </div>
+              <span id="welcomeText" class="ms-2 fw-bold text-primary"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        id="shopCarousel"
+        class="carousel slide mb-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#shopCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#shopCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#shopCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#shopCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#shopCarousel"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../img/imgCarousel1.png"
+              class="d-block w-100"
+              alt="Summer Vibes"
+            />
+            <div class="carousel-caption d-none d-md-block slide-1-content">
+              <div class="px-md-0 px-4">
+                <h1 class="display-1 fw-bolder text-warning">
+                  NYX - SUMMER VIBES
+                </h1>
+                <p class="lead mb-4 fs-4 fw-light">
+                  Discover the newest swimwear collection, confidently shine
+                  under the sun.
+                </p>
+                <a
+                  href="category.html"
+                  class="btn btn-warning btn-lg fw-bold px-4 me-3"
+                  ><i class="fas fa-shopping-bag me-2"></i> Shop Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="../img/imgCarousel2.png"
+              class="d-block w-100"
+              alt="Women Collection"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <a
+                href="category.html?type=monokini"
+                class="btn btn-outline-light btn-lg fw-bold px-4"
+                >VIEW WOMEN'S COLLECTION</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/imgCarousel6.jpg"
+              class="d-block w-100"
+              alt="Men Beachwear"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <a
+                href="category.html?type=men"
+                class="btn btn-primary btn-lg fw-bold px-4"
+                >SHOP MEN'S WEAR</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="../img/imgCarousel5.jpg"
+              class="d-block w-100"
+              alt="Accessories"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <a
+                href="category.html?type=accessory"
+                class="btn btn-light btn-lg fw-bold px-4"
+                >EXPLORE ACCESSORIES</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="../img/imgCarousel4.jpg"
+              class="d-block w-100"
+              alt="About NYX"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <a
+                href="about.html"
+                class="btn btn-outline-warning btn-lg fw-bold px-4"
+                >LEARN ABOUT NYX</a
+              >
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#shopCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#shopCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="container my-5">
+        <h2 class="text-center fw-bold mb-5">FEATURED CATEGORIES</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <a
+              href="category.html?type=bikini"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="card category-card shadow-lg position-relative border-0 overflow-hidden"
+              >
+                <img
+                  src="../img/imgProduct1.webp"
+                  class="w-100"
+                  alt="Women's Bikini"
+                />
+                <div
+                  class="card-img-overlay d-flex align-items-end p-3 bg-dark bg-opacity-25"
+                >
+                  <h4 class="fw-bold text-white mb-0">Women's Bikini</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="category.html?type=monokini"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="card category-card shadow-lg position-relative border-0 overflow-hidden"
+              >
+                <img
+                  src="../img/imgProduct2.webp"
+                  class="w-100"
+                  alt="One-piece swimsuit"
+                />
+                <div
+                  class="card-img-overlay d-flex align-items-end p-3 bg-dark bg-opacity-25"
+                >
+                  <h4 class="fw-bold text-white mb-0">One-Piece Swimsuit</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="category.html?type=men"
+              class="text-decoration-none text-dark"
+            >
+              <div
+                class="card category-card shadow-lg position-relative border-0 overflow-hidden"
+              >
+                <img
+                  src="../img/imgProduct3.jpg"
+                  class="w-100"
+                  alt="Men's fashion"
+                />
+                <div
+                  class="card-img-overlay d-flex align-items-end p-3 bg-dark bg-opacity-25"
+                >
+                  <h4 class="fw-bold text-white mb-0">Men's Fashion</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container my-5" id="new-arrivals">
+        <h2 class="text-center fw-bold mb-5 text-primary-brand">
+          NEWEST PRODUCTS <i class="fas fa-star text-warning"></i>
+        </h2>
+
+        <div
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4"
+          id="new-products-grid"
+        >
+          <div class="col-12 text-center">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2 text-muted">Loading products...</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="category.html" class="btn btn-outline-dark btn-lg px-5">
+            VIEW ALL PRODUCTS <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="container my-5 py-5 bg-light rounded shadow-sm">
+        <h2 class="text-center fw-bold mb-5">WHY CHOOSE NYX?</h2>
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <div class="feature-box">
+              <i class="fas fa-truck fa-3x text-primary-brand mb-3"></i>
+              <h5 class="fw-bold">SUPER FAST DELIVERY</h5>
+              <p class="small text-muted mb-0">
+                Free shipping for orders over 500k.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box">
+              <i class="fas fa-exchange-alt fa-3x text-primary-brand mb-3"></i>
+              <h5 class="fw-bold">EASY EXCHANGE/RETURN</h5>
+              <p class="small text-muted mb-0">
+                Change size or model within 7 days.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box">
+              <i class="fas fa-lock fa-3x text-primary-brand mb-3"></i>
+              <h5 class="fw-bold">ABSOLUTE SECURITY</h5>
+              <p class="small text-muted mb-0">
+                Customer information is 100% protected.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <h5 class="fw-bold text-warning">
+              <i class="fas fa-sun me-2"></i>NYX
+            </h5>
+            <p class="small text-muted">
+              Premium beachwear, confidently showcase your personality under the
+              sunset light.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <h6 class="fw-bold">Support</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none footer-link"
+                  >Return Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none footer-link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white-50 text-decoration-none footer-link"
+                  >Size Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="fw-bold">Contact</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i>Hoa Hai Ward, Ngu Hanh
+                Son District, Da Nang
+              </li>
+              <li><i class="fas fa-phone me-2"></i>0987 654 321</li>
+              <li>
+                <i class="fas fa-envelope me-2"></i>contact@nyxbeachwear.vn
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="fw-bold">Subscribe</h6>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="email"
+                placeholder="Your email"
+                aria-label="Email"
+              />
+              <button class="btn btn-warning" type="submit">Sign Up</button>
+            </form>
+            <div class="social-icons mt-3">
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-facebook-f fa-lg"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-tiktok fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="text-white-50" />
+        <div class="text-center small text-white-50">
+          &copy; 2025 Nyx-Beachwear. All rights reserved by Nyx.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../nervous_system_js/script.js"></script>
+    <script src="../nervous_system_js/index.js"></script>
+  </body>
+</html>
